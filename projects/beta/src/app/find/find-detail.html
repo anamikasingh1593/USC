@@ -1,0 +1,17 @@
+<div mat-dialog-content>
+  <img class="detailImage" mat-dialog-image [src]="data.ImageURL">
+  <div class="box">
+    <div>
+      <div class="name"> {{data.TapeLabel}} </div>
+      <div class="boxData">{{data.OrganizationName}}</div>
+    </div>
+    <div>
+      <div class="boxData">{{data.Length}}</div>
+      <div class="boxData">{{data.LanguageLabel}}</div>
+    </div>
+  </div>
+  <p>
+    {{data.GrantStatement}}
+  </p>
+  <div class="group boxData">{{data.ExperienceGroup}} </div>
+</div>

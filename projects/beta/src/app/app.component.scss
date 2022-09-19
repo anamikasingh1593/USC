@@ -1,0 +1,13 @@
+@import "vhap";
+
+.header {
+  width: 100%;
+  height: 48px;
+  position: fixed;
+  z-index: 5;
+  background: $vhap-purple;
+  color: #ffffff;
+}
+.outlet {
+  padding-top: 48px;
+}

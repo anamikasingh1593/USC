@@ -1,0 +1,24 @@
+<div fxLayout="column" class="find-component">
+  <div fxLayout="row" class="header">
+    <span class="label">find</span>
+  </div>
+</div>
+<form class="form">
+  <mat-form-field class="form-field">
+    <input type="text" placeholder="Search DB" aria-label="Number" matInput [formControl]="myControl"
+      [matAutocomplete]="auto">
+    <mat-autocomplete #auto="matAutocomplete" (optionSelected)='showSearchResult($event.option.value)'>
+      <mat-option *ngFor="let option of newData" [value]="option">
+        {{option}}
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+</form>
+<div class="container">
+  <cdk-virtual-scroll-viewport itemSize="48" class="viewport">
+    <mat-card *cdkVirtualFor="let item of resultData" class="item" (click)='getDetails(item.IntCode)'>
+      <img class="image" mat-card-sm-image [src]="item.ImageURL">
+      <mat-card-content>{{item.TapeLabel}}</mat-card-content>
+    </mat-card>
+  </cdk-virtual-scroll-viewport>
+</div>

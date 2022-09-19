@@ -1,0 +1,107 @@
+.container {
+  display: flex;
+  align-self: center;
+}
+
+.form {
+  align-self: center;
+}
+
+.viewport {
+  height: 600px;
+  width: 100%;
+  margin: 2em 8em 8em;
+}
+
+mat-card {
+  margin: 1em;
+  color: white;
+}
+
+.image {
+  width: 40px;
+  height: 30px;
+  border-radius: 6px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.item {
+  height: 55px;
+  color: #a9c;
+  cursor: pointer;
+  flex-direction: row;
+  box-sizing: border-box;
+  display: flex;
+  place-content: center flex-start;
+  align-self: center;
+  contain: strict;
+  transform: translateZ(0);
+  will-change: scroll-position;
+  width: auto;
+}
+
+.detailImage {
+  display: block;
+  padding: 24px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  overflow: auto;
+  outline: 0;
+  width: 100%;
+  height: 100%;
+  min-height: inherit;
+  max-height: inherit;
+}
+
+.box {
+  display: flex;
+  column-gap: 220px;
+  flex: 1, 1, 0.5rem;
+}
+
+p {
+  color: #a9c;
+  font-size: .75rem;
+  font-weight: 500;
+}
+
+.boxData {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: .75rem;
+  font-weight: 500;
+}
+
+.group {
+  display: flex;
+  flex-direction: row-reverse
+}
+
+.name {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.form-field {
+  margin: auto;
+  width: 20%;
+  padding-left: 40%;
+  padding-top: 30px;
+}
+
+mat-card-content {
+  padding: 5px 10px;
+}
+
+.find-component {
+  width: 100%;
+
+  .header {
+    width: 100%;
+  }
+
+  .label {
+    color: #a9c;
+    margin-left: 3px;
+  }
+}

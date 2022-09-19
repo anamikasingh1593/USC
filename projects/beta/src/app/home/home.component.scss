@@ -1,0 +1,14 @@
+@import "vhap";
+
+.home-component {
+  width: 100%;
+
+  .header {
+    width: 100%;
+  }
+
+  .label {
+    color: $vhap-purple;
+    margin-left: 3px;
+  }
+}
